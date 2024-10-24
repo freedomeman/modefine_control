@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "senddatatask.h": "c",
+        "crc8_crc16.h": "c",
+        "task.h": "c",
+        "freertos.h": "c",
+        "projdefs.h": "c",
+        "main.h": "c",
+        "anglegettask.h": "c",
+        "angledget.h": "c",
+        "arm.h": "c"
+    }
+}
