@@ -5,7 +5,7 @@
 extern Can_receive can_receive;
 extern Arm arm;
 
-
+//这只是一行注释
 
 void Can_receive_init(void)
 {
