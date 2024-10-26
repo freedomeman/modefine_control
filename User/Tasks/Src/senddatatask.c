@@ -29,15 +29,16 @@ void StartSendDataTask(void const *argument)
 //		wait_time = xTaskGetTickCount();
         
 //        uint8_t data[DATA_LENGTH] = {0x40, 0x50, 0x60, 0x70};
-         Data_Concatenation(arm.angle_send_data, DATA_LENGTH);
-         HAL_UART_Transmit(&huart1, (uint8_t *)(&tx_data), sizeof(tx_data), 50);
+        //  Data_Concatenation(arm.angle_send_data, DATA_LENGTH);
+        //  HAL_UART_Transmit(&huart1, (uint8_t *)(&tx_data), sizeof(tx_data), 50);
+         HAL_UART_Transmit(&huart1, (uint8_t *)(&arm.angle_send_data), sizeof(arm.angle_send_data), 50);
          //HAL_UART_Transmit(&huart1, (uint8_t *)(&ch) , 1 , 50);
         //vofa_send(&arm.joint[0].angle);
         // printf(" hello stm32\n");
         // arm.joint[0].angle;
         //printf("%d\n",(int)arm.joint[0].angle );
 
-        //osDelayUntil(&wait_time, 200);
+        osDelayUntil(&wait_time, 500);
     }
 }
 

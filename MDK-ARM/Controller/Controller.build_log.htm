@@ -21,7 +21,7 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-C:\Users\liyux\Desktop\Controller\MDK-ARM\Controller.uvprojx
+D:\changku\modefine_control\MDK-ARM\Controller.uvprojx
 Project File Date:  10/05/2024
 
 <h2>Output:</h2>
@@ -30,13 +30,15 @@ Build target 'Controller'
 compiling senddatatask.c...
 ..\User\Tasks\Src\senddatatask.c(25): warning:  #177-D: variable "ch"  was declared but never referenced
       uint8_t ch = '\n';
-..\User\Tasks\Src\senddatatask.c(69): warning:  #177-D: variable "i"  was declared but never referenced
+..\User\Tasks\Src\senddatatask.c(70): warning:  #177-D: variable "i"  was declared but never referenced
       uint8_t i;
-..\User\Tasks\Src\senddatatask.c: 2 warnings, 0 errors
+..\User\Tasks\Src\senddatatask.c(50): warning:  #177-D: function "Data_Concatenation"  was declared but never referenced
+  static void Data_Concatenation(uint8_t *data, uint16_t data_lenth)
+..\User\Tasks\Src\senddatatask.c: 3 warnings, 0 errors
 linking...
-Program Size: Code=16820 RO-data=1308 RW-data=152 ZI-data=18152  
+Program Size: Code=16668 RO-data=536 RW-data=148 ZI-data=18116  
 FromELF: creating hex file...
-"Controller\Controller.axf" - 0 Error(s), 2 Warning(s).
+"Controller\Controller.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -60,7 +62,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.5.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:04
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>
